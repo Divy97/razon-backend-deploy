@@ -17,9 +17,9 @@ import postRouter from "./routes/post.routes.js";
 import chatRouter from "./routes/chat.routes.js";
 import messageRouter from "./routes/message.routes.js";
 
-app.get('/', (req,res) => {
-    res.send('Hello World!');
-})
+// app.get('/', (req,res) => {
+//     res.send('Hello World!');
+// })
 
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/posts", postRouter);

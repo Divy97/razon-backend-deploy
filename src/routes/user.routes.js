@@ -29,6 +29,11 @@ router.route("/register").post(
   ]),
   registerUser
 );
+
+router.route("/hello").get((req, res) => {
+  res.send("hello")
+})
+
 router.route("/login").post(loginUser);
 router.route("/verify").get(verifyUser);
 //secure routes
